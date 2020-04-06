@@ -16,6 +16,10 @@
   color: #aaa;
 }
 
-.usermotto {
+.btn-inc1 {
   margin-top: 200px;
+}
+
+.btn-inc2 {
+  margin-top: 20px;
 }

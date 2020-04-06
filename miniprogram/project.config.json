@@ -7,9 +7,9 @@
 	"libVersion": "2.8.2",
 	"projectname": "miniprogram",
 	"scripts": {
-		"beforeCompile": "npm run tsc",
-		"beforePreview": "npm run tsc",
-		"beforeUpload": "npm run tsc"
+		"beforeCompile": "npm run build",
+		"beforePreview": "npm run build",
+		"beforeUpload": "npm run build"
 	},
 	"setting": {},
 	"simulatorType": "wechat",

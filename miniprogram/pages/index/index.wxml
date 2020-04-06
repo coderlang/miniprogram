@@ -1,13 +1,10 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    <text class="userinfo-nickname">「码农浪哥」关注人数{{thumbsUpCnt}}</text>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <button class="btn-inc1" bindtap="inc1">关注+1</button>
+    <button class="btn-inc2" bindtap="inc2">关注+2</button>
   </view>
 </view>
