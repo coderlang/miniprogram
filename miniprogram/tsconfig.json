@@ -1,26 +1,22 @@
 {
   "compilerOptions": {
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "module": "CommonJS",
-    "target": "ES5",
-    "allowJs": false,
-    "experimentalDecorators": true,
-    "noImplicitThis": true,
+    "module": "ES6",
+    "target": "es6",
     "noImplicitReturns": true,
+    "strict": true,
     "alwaysStrict": true,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "strictNullChecks":false,
     "inlineSourceMap": true,
     "inlineSources": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strict": true,
-    "removeComments": true,
-    "pretty": true,
-    "strictPropertyInitialization": true,
-    "lib": ["es5"],
     "typeRoots": [
       "./typings"
+    ],
+    "lib": [
+      "es2015"
     ]
   },
   "include": [
