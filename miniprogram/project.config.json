@@ -11,9 +11,12 @@
 		"beforePreview": "npm run build",
 		"beforeUpload": "npm run build"
 	},
-	"setting": {},
+	"setting": {
+		"newFeature": true
+	},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"appid": "wx9dee70bae7f84e6d",
+	"qqappid": "wx9dee70bae7f84e6d",
 	"condition": {}
 }

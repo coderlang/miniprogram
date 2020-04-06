@@ -1,6 +1,9 @@
 <!--index.wxml-->
+<wxs src="../../utils/Time.wxs" module="Time"></wxs>
+
 <view class="container">
   <view class="userinfo">
+    <text>{{Time.formatTime(Time.getTime())}}</text>
     <text class="userinfo-nickname">「码农浪哥」关注人数{{thumbsUpCnt}}</text>
   </view>
   <view class="usermotto">
