@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/coderlang/coderlang"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,5 +11,18 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_select.png"
+    }, {
+      "pagePath": "pages/coderlang/coderlang",
+      "text": "码农浪哥",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my_select.png"
+    }]
+  },
   "sitemapLocation": "sitemap.json"
 }
