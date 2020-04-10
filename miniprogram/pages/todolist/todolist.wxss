@@ -1,0 +1,5 @@
+/* pages/todolist/todolist.wxss */
+.todolist-item {
+  display: flex;
+  flex-direction: row;
+}

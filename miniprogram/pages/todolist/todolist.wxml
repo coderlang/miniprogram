@@ -1,0 +1,7 @@
+<view class="container">
+  <checkbox-group bindchange="checkboxChange">
+    <label class="todolist-item" wx:for="{{items}}">
+      <checkbox value="{{item}}"/>{{item}}
+    </label>
+  </checkbox-group>
+</view>
