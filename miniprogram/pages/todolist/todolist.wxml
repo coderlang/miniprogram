@@ -5,3 +5,7 @@
     </label>
   </checkbox-group>
 </view>
+
+<view>
+<input value="{{text}}" bindinput="onNewTodoInput" bindconfirm="onNewTodoConfirm" placeholder="下一个行动计划是？"></input>
+</view>
