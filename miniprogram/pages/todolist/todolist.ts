@@ -1,13 +1,21 @@
 Page({
   data:{
-    items:["你说", "222", "444"],
+    items:[],
     text:null as string,
+    cnt:0 as number,
+    doneListHide:false as boolean,
   },
   onNewTodoInput(e:{detail:{value:string}}):void {
-    console.log("----e", e);
     this.setData({text:e.detail.value});
   },
   onNewTodoConfirm():void {
-    this.setData({items:[...this.data.items, this.data.text], text:null});
+    let text = this.data.text||"关注微信公众号：码农浪哥（微信ID：coderlang）"
+    this.setData({items:[...this.data.items, text], text:null});
+  },
+  hideTodoListDone():void {
+    this.setData({doneListHide:true})
+  },
+  showTodoListDone():void {
+    this.setData({doneListHide:false});
   }
 })

@@ -1,11 +1,35 @@
-<view class="container">
-  <checkbox-group bindchange="checkboxChange">
-    <label class="todolist-item" wx:for="{{items}}">
-      <checkbox value="{{item}}"/>{{item}}
-    </label>
-  </checkbox-group>
+<view class="page" data-weui-theme="light">
+  <view class="cnt-done-container">
+    <view class="weui-cells__title">{{cnt}}项已完成</view>
+    <text class="weui-cells__title,todolist-done-btn" bindtap="hideTodoListDone">隐藏</text>
+    <text class="weui-cells__title,todolist-done-btn" bind:tap="showTodoListDone">显示</text>
+  </view>
+  <view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+      <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}">
+              <view class="weui-cell__hd">
+                  <checkbox
+                      class="weui-check"
+                      value="{{item}}"
+                  />
+                  <i class="weui-icon-checked"></i>
+              </view>
+              <view class="weui-cell__bd">
+                  <view>{{item}}</view>
+              </view>
+          </label>
+      </checkbox-group>
+  </view>
 </view>
 
-<view>
-<input value="{{text}}" bindinput="onNewTodoInput" bindconfirm="onNewTodoConfirm" placeholder="下一个行动计划是？"></input>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_vcode">
+        <view class="weui-cell__bd">
+            <input value="{{text}}" bindinput="onNewTodoInput" class="weui-input" placeholder="下一个行动计划是？" />
+        </view>
+        <view class="weui-cell__ft">
+            <view class="weui-vcode-btn" bind:tap="onNewTodoConfirm">确认</view>
+        </view>
+    </view>
 </view>
+<view class="weui-cells__tips">欢迎关注公众号「码农浪哥」</view>

@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import "./weui-wxss/weui.wxss";
+
 .container {
   height: 100%;
   display: flex;
