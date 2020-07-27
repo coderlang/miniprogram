@@ -1,0 +1,8 @@
+function formatRMB(number) {
+  return "￥" + Number((number / 100).toFixed(2));
+}
+
+
+module.exports = {
+  formatRMB: formatRMB
+};
