@@ -1,17 +1,28 @@
 <!--miniprogram/pages/wxs/wxs.wxml-->
 <wxs src="../../utils/RMB.wxs" module="RMB"></wxs>
 <wxs src="../../utils/Time.wxs" module="Time"></wxs>
+<wxs src="../../utils/Array.wxs" module="Array"></wxs>
 
 <text>WXS项目中常用技巧</text>
-<view>
-一、数据显示
-</view>
+
+<view>一、数据显示</view>
 
 <view>当前时间:{{Time.formatTime(timestamp)}}</view>
 <view>茅台股价:{{RMB.formatRMB(maoTaiPrice)}}元</view>
 
-<view>
-二、逻辑判断
-</view>
+<view>二、逻辑判断</view>
 <button bind:tap="sell" wx:if="{{maoTaiPrice>1650*100}}">买入茅台</button>
 <button bind:tap="buy" wx:else>卖出茅台</button>
+
+<view>二、显示数组</view>
+<view>"，"分割数组显示:</view>
+<view>{{Array.join(str1, "，")}}</view>
+
+<view>"#"分割数组显示:</view>
+<view>{{Array.join(str1, "#")}}</view>
+
+<view>先拼接，再"，"分割数组显示: </view>
+<view>{{Array.join(Array.concat(str1, str2), "，")}}</view>
+
+<view>先拼接，再"，"分割数组，倒序显示:</view>
+<view>{{Array.join(Array.reverse(Array.concat(str1, str2)), "，")}}</view>

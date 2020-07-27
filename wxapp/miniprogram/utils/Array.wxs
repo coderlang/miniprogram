@@ -1,0 +1,18 @@
+function join(arrayObject, separator) {
+  return arrayObject.join(separator);
+}
+
+function concat(arrayObject1, arrayObject2) {
+  return arrayObject1.concat(arrayObject2);
+}
+
+function reverse(arrayObject) {
+  return arrayObject.reverse();
+}
+
+
+module.exports = {
+  join:join,
+  concat:concat,
+  reverse:reverse,
+};
