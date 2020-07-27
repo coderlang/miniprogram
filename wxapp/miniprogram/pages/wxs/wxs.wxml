@@ -14,7 +14,7 @@
 <button bind:tap="sell" wx:if="{{maoTaiPrice>1650*100}}">买入茅台</button>
 <button bind:tap="buy" wx:else>卖出茅台</button>
 
-<view>二、显示数组</view>
+<view>三、数组显示</view>
 <view>"，"分割数组显示:</view>
 <view>{{Array.join(str1, "，")}}</view>
 
@@ -26,3 +26,7 @@
 
 <view>先拼接，再"，"分割数组，倒序显示:</view>
 <view>{{Array.join(Array.reverse(Array.concat(str1, str2)), "，")}}</view>
+
+<view>四、数组操作（标签等等）</view>
+<button bind:tap="del1" wx:if="{{Array.indexOf(str1, '一')!==-1}}">删除str1中'一'</button>
+<button bind:tap="add1" wx:if="{{Array.indexOf(str1, '一')===-1}}">增加str1中'一'</button>

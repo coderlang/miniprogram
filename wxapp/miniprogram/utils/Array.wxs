@@ -10,9 +10,16 @@ function reverse(arrayObject) {
   return arrayObject.reverse();
 }
 
+function indexOf(arrayObject, searchvalue) {
+  if (arrayObject==null) return -1;
+
+  return arrayObject.indexOf(searchvalue);
+}
+
 
 module.exports = {
-  join:join,
-  concat:concat,
-  reverse:reverse,
+  join:join
+  ,concat:concat
+  ,reverse:reverse
+  ,indexOf:indexOf
 };

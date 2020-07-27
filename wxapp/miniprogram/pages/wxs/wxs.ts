@@ -14,5 +14,15 @@ Page({
     this.setData({
       maoTaiPrice:1700*100
     })
+  },
+  del1():void {
+    this.setData({
+      str1:this.data.str1.filter((r) => r!=='一')
+    })
+  },
+  add1():void {
+    this.setData({
+      str1:['一', ...this.data.str1]
+    })
   }
 })
