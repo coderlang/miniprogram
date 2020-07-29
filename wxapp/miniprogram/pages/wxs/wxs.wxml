@@ -2,13 +2,14 @@
 <wxs src="../../utils/RMB.wxs" module="RMB"></wxs>
 <wxs src="../../utils/Time.wxs" module="Time"></wxs>
 <wxs src="../../utils/Array.wxs" module="Array"></wxs>
-
+<wxs src="../../utils/OrderState.wxs" module="OrderState"></wxs>
 <text>WXS项目中常用技巧</text>
 
 <view>一、数据显示</view>
 
 <view>当前时间:{{Time.formatTime(timestamp)}}</view>
 <view>茅台股价:{{RMB.formatRMB(maoTaiPrice)}}元</view>
+<view>订单状态:{{OrderState.formatState("0")}}</view>
 
 <view>二、逻辑判断</view>
 <button bind:tap="sell" wx:if="{{maoTaiPrice>1650*100}}">买入茅台</button>

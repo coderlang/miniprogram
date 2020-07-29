@@ -1,0 +1,13 @@
+function formatState(state) {
+  var map = {
+    "0":"未支付",
+    "1":"已支付",
+    "2":"已退款"
+  };
+
+  return map[state];
+}
+
+module.exports = {
+  formatState: formatState
+};
