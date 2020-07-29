@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/wxs/wxs"
+    "pages/wxs/wxs",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
