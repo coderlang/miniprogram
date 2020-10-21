@@ -33,3 +33,7 @@
 先分析，实在不行，再联系我，暗号：**github**
 
 ![先分析，实在不行，可联系我](https://swjtu.oss-cn-hangzhou.aliyuncs.com/wxapp/ContactMe.jpeg)
+
+
+## 5.微信小程序转QQ小程序
+在trunk目录下执行命令 ./wx2xx/wx2qq.sh wxapp
