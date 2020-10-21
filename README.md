@@ -36,4 +36,4 @@
 
 
 ## 5.微信小程序转QQ小程序
-在trunk目录下执行命令 ./wx2xx/wx2qq.sh wxapp
+在trunk目录下执行命令 **./wx2xx/wx2qq.sh wxapp**
