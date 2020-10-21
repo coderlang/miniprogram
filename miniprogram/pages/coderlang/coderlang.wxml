@@ -1,4 +1,0 @@
-<!--pages/coderlang/coderlang.wxml-->
-<view class="container">
-<image src="/images/coderlang.jpeg" mode="aspectFit"></image>
-</view>
